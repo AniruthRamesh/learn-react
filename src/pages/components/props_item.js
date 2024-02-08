@@ -1,8 +1,11 @@
 function Item({ name, isPacked }) {
-  if (isPacked) {
-    return <li className="item">{name} ✔</li>;
-  }
-  return <li className="item"> {name} </li>
+  // if (isPacked) {
+  //   return <li className="item">{name} ✔</li>;
+  // }
+  // return <li className="item"> {name} </li>
+  let tag
+  isPacked ? tag = <li className="item"><del>{name}</del></li> : tag = <li className="item"> {name} </li>
+  return tag
 }
 
 export default function PackingList() {
