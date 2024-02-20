@@ -4,8 +4,10 @@ let nextId = 3;
 const initialList = [
   { id: 0, title: 'Big Bellies', seen: false },
   { id: 1, title: 'Lunar Landscape', seen: false },
-  { id: 2, title: 'Terracotta Army', seen: true },
+  { id: 2, title: 'Terracotta Army'  , seen: true },
 ];
+
+
 
 export default function BucketList() {
   const [myList, setMyList] = useState(initialList);
